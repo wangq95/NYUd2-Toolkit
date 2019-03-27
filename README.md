@@ -39,7 +39,7 @@ Files that begin with the prefix ``a-`` are the accelerometer dumps. Files that 
 Sample results are as follows:
 
 rgb image with resolution of ``480 * 640``:
-![rgb]()
+![rgb](https://github.com/QianshengGu/NYU-d-v2-Tools/blob/master/misc/rgb.png)
 
 dense depth image with the same resolution of rgb image:
 ![depth]()
