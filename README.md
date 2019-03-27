@@ -42,7 +42,7 @@ rgb image with resolution of ``480 * 640``:
 ![rgb](https://github.com/QianshengGu/NYU-d-v2-Tools/blob/master/misc/rgb.png)
 
 dense depth image with the same resolution of rgb image:
-![depth]()
+![depth](https://github.com/QianshengGu/NYU-d-v2-Tools/blob/master/misc/depth.png)
 
 Tips: For better training, I save the dense depth of RGB image with the data format of **16 bit**, so the value of depth map is between ``0`` and ``65535``, as defined at:
 
