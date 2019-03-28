@@ -1,6 +1,6 @@
 # NYUd v2 Tools
 
-Here, we provide a simple tool for pre-processing of NYU-d v2 dataset. As the the NYU-d v2 author only provide the original dumped data collected by Kinect. When we apply monocular depth estimation on NYU-d v2 dataset, we shoule generate the **RGB** image and **dense depth map** ourself, the process method is as follows.
+Here, we provide simple tools of pre-processing for NYUd v2 dataset, as the the NYUd v2 dataset's author only provide the original dumped data collected by Kinect. When we apply monocular depth estimation on NYU-d v2 dataset, we shoule generate the **RGB** image and **dense depth map** ourself, the process method is as follows.
 
 ## Requirements
 
@@ -9,7 +9,7 @@ These code are tested on Ubuntu 16.04 LTS with MATLAB 2015b and Python2.7.
 
 ## Dataset preparation
 
-1. Download the **raw data** of [NYU-d v2 dataset](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html#raw_parts), which more than ``400G``, please make sure that you have enough disk space availabel. Then extract them into the directory ``nyud_raw_data``. At the same time, download the ``Toolbox`` and extract it.
+1. Download the **raw data** of [NYU-d v2 dataset](https://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html#raw_parts), which more than ``400G``, please make sure that you have **enough disk space** availabel. Then extract them into the directory ``nyud_raw_data``. At the same time, download the ``Toolbox`` from the same url above, and extract it.
 
 2. The dataset is divided into ``590`` folders which correspond to each ``scene`` being filmed, such as ``living_room_0012``. The file is structured as follows:
 
@@ -51,6 +51,7 @@ imgDepth = imgDepth / 10.0 * 65535.0
 imgDepth = uint16(imgDepth)
 imwrite(imgDepth, outDepthFilename, 'png', 'bitdepth', 16);
 ```
+You can also save them with the format of ``8bit`` which limit the value of depth map between ``0`` and ``255``, just change the script above.
 
 ## Generate the NYU-d v2 thin dataset
 
