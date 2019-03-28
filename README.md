@@ -1,4 +1,4 @@
-# NYU-d v2 Tools
+# NYUd v2 Tools
 
 Here, we provide a simple tool for pre-processing of NYU-d v2 dataset. As the the NYU-d v2 author only provide the original dumped data collected by Kinect. When we apply monocular depth estimation on NYU-d v2 dataset, we shoule generate the **RGB** image and **dense depth map** ourself, the process method is as follows.
 
