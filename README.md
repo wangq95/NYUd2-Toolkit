@@ -51,7 +51,7 @@ imgDepth = imgDepth / 10.0 * 65535.0
 imgDepth = uint16(imgDepth)
 imwrite(imgDepth, outDepthFilename, 'png', 'bitdepth', 16);
 ```
-You can also save them with the format of ``8bit`` which limit the value of depth map between ``0`` and ``255``, just change the script above.
+- You can also save them with the format of ``8bit`` which limit the value of depth map between ``0`` and ``255``, just change the script above.
 
 ## Generate the NYU-d v2 thin dataset
 
