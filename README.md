@@ -26,7 +26,7 @@ These code are tested on Ubuntu 16.04 LTS with MATLAB 2015b and Python2.7.
 ../bedroom_0001/r-1294886362.814111-3152792506.ppm
 ```
 
-Files that begin with the prefix ``a-`` are the accelerometer dumps. Files that begin with the prefix ``r-`` and ``d-`` are the frames from the RGB and depth cameras, respectively. You can use ``get_synched_frames.m`` function in the Toolbox to find the matching relationship between ``rgb image`` and ``depth map``.
+- Files that begin with the prefix ``a-`` are the accelerometer dumps. Files that begin with the prefix ``r-`` and ``d-`` are the frames from the RGB and depth cameras, respectively. You can use ``get_synched_frames.m`` function in the Toolbox to find the matching relationship between ``rgb image`` and ``depth map``.
 
 ## Generate the RGB and Dense Depth map
 
@@ -44,7 +44,7 @@ rgb image with resolution of ``480 * 640``:
 dense depth image with the same resolution of rgb image:
 ![depth](https://github.com/QianshengGu/NYU-d-v2-Tools/blob/master/misc/depth.png)
 
-Tips: For better training, I save the dense depth of RGB image with the data format of **16 bit**, so the value of depth map is between ``0`` and ``65535``, as defined at:
+- Tips: For better training, I save the dense depth of RGB image with the data format of **16 bit**, so the value of depth map is between ``0`` and ``65535``, as defined at:
 
 ```bash
 imgDepth = imgDepth / 10.0 * 65535.0
