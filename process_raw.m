@@ -12,7 +12,7 @@ disp(numel(nameFolds));
 
 count = 0;
 outCount = 0;
-for 1:numel(nameFolds)
+for f = 1:numel(nameFolds)
 	disp(f);
 	disp(nameFolds{f});
 	files = get_synched_frames(nameFolds{f});
